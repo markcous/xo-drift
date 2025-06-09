@@ -1,0 +1,1 @@
+ScriptableObject assets like CaptainData, ShipData, and RouteData.

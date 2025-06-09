@@ -1,0 +1,1 @@
+Prefab templates for UI elements, captains, ships, crew, and miscellaneous objects.

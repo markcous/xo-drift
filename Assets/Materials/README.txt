@@ -1,0 +1,1 @@
+Material assets organized by shader or material type.

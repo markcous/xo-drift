@@ -1,0 +1,1 @@
+All imported art assets: characters, ships, environments, and UI graphics.

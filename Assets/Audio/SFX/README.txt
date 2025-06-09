@@ -1,0 +1,1 @@
+Sound effects for UI interactions and in-game events.

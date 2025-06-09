@@ -1,0 +1,1 @@
+Background art, skyboxes, and environmental props.

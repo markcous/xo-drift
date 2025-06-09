@@ -1,0 +1,1 @@
+Core systems like GameState management and SaveManager.

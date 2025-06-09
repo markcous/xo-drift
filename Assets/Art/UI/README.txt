@@ -1,0 +1,1 @@
+UI-specific art assets like button graphics, icons, and fonts.

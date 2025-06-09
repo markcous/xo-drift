@@ -1,0 +1,1 @@
+Third-party SDKs and packages outside Unity Package Manager.

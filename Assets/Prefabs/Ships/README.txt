@@ -1,0 +1,1 @@
+Prefab templates for ship objects.
