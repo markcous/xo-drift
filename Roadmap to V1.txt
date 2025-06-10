@@ -1,0 +1,125 @@
+## 🚀 MVP (v0.1) – Complete Mission Loop
+
+**Goal:** Deliver a fully playable “one‐mission” end-to-end loop so you can start play-testing core gameplay and pacing.
+
+1. **Config Phase**
+
+   * Static list of 1–2 captains (no unlocks yet)
+   * 1 ship, 1 fixed crew roster
+   * Hard-coded route & cargo
+
+2. **Setup Phase**
+
+   * Simple UI: drag-and-drop crew to 3 stations
+   * “Secure cargo” button that toggles a flag
+
+3. **Flight Phase**
+
+   * One encounter type (Asteroid Field)
+   * Single skill-check resolution (Engineer vs. difficulty 3)
+   * On success/fail, apply hull damage or morale loss
+
+4. **Debrief Phase**
+
+   * Show flat rewards: +credits, +XP, +rep
+   * Button → back to Main Menu
+
+5. **Tech Foundations**
+
+   * `MissionManager` drives phase transitions
+   * Basic `Save/Load` of player state (credits, XP, rep)
+
+---
+
+## 🔄 v0.2 – Flight & Decision Variety
+
+**Goal:** Add choice and challenge variety so every run feels different.
+
+* **Encounter System**:
+
+  * +Pirate Ambush
+  * +System Failure (skill check by assigned crew role)
+* **Destination Decision Phase**:
+
+  * 2–3 simple options (legal delivery vs. smuggle)
+  * Effects: ±credits, ±rep
+* **Return Trip Stub**:
+
+  * Re-use Flight Phase logic with same encounters
+
+---
+
+## 🌟 v0.3 – Reputation & Captain Unlocks
+
+**Goal:** Introduce meta-progression to hook players.
+
+* **Reputation System**
+
+  * Track `repScore` (–100→+100)
+  * UI badge for current tier
+* **Captain Unlocks**
+
+  * New captain at rep ≥ 20, 40
+  * Display locked/unlocked in Config UI
+
+---
+
+## 👥 v0.4 – Crew Management & Hiring
+
+**Goal:** Empower players to shape their crew over time.
+
+* **Crew Roster UI**
+
+  * View stats (morale, skillLevel)
+  * Fire/reassign crew
+* **Hiring & Training**
+
+  * unlockRep thresholds {10,30,60}
+  * Training: spend credits → +1 skillLevel (cost 500–2,000)
+
+---
+
+## 🛠 v0.5 – Ship Upgrades & Tech Tree
+
+**Goal:** Let players invest mission rewards into tangible ship improvements.
+
+* **Research Points (RP)**
+
+  * Earn \~10 RP/mission
+* **Tech Tree UI**
+
+  * Branches: Defense, Propulsion, Scanning
+  * Tier-based modules (cost 20–400 RP + credits)
+* **Module Slot System**
+
+  * Equip/unequip up to 4 modules
+  * Recalculate ship `Stats` on equip
+
+---
+
+## 🎉 v1.0 – Content Complete & Polish
+
+**Goal:** All core systems live, balanced, with art/audio—and ready for external playtests or soft launch.
+
+* **Full Mission Catalog** (5-10 mission definitions)
+* **All Encounter Types** with severity scaling
+* **Decision Engine** branching outcomes & optional objectives
+* **Persistent Meta-Hub**: Save slots, player profile screen
+* **UI/UX Polish**: animations, alert icons, tooltips
+* **Art & Audio Pass**: placeholder → stylized assets, SFX, music
+* **Tutorial Mission**
+
+---
+
+### Roadmap Summary Table
+
+|  Release | Core Deliverables                                           |
+| :------: | ----------------------------------------------------------- |
+| **v0.1** | End-to-end single mission loop, basic UI & save/load        |
+| **v0.2** | Multiple encounter types, destination decision, return trip |
+| **v0.3** | Reputation tracking, captain unlocks                        |
+| **v0.4** | Crew roster UI, hiring & training                           |
+| **v0.5** | Research points, tech tree, ship module upgrades            |
+| **v1.0** | Full mission set, decision engine, UI/audio/asset polish    |
+
+---

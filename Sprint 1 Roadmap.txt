@@ -1,0 +1,76 @@
+Here’s a three-sprint plan to get you to a v0.1 MVP—that end-to-end single-mission loop with basic UI and save/load—using 2-week sprints. Feel free to tweak durations or shuffle tasks as your team size and velocity dictate.
+
+**Sprint 1 (Weeks 1–2): Foundation & Architecture**
+
+* **Project setup**
+
+  * Create Unity project, Git repo, folder structure (Scenes, Scripts, UI, Data)
+  * Decide on UI framework (e.g. UI Toolkit vs. UGUI)
+* **Core data & state machine**
+
+  * Design data models (Mission, Captain, Ship, CrewMember, Route) as ScriptableObjects or plain C# classes
+  * Implement a simple MissionStateMachine with states: Config → Setup → Play → End
+* **Basic UI placeholders**
+
+  * Stub out three scenes/screens:
+
+    1. ConfigScreen (placeholder buttons)
+    2. MissionScreen (blank canvas)
+    3. EndScreen (“Mission Complete”)
+* **Save/Load skeleton**
+
+  * Choose serialization format (JSON or Unity’s built-in)
+  * Write SaveManager with Save() and Load() methods that read/write a dummy GameState
+
+**Deliverable:** Unity project that compiles, lets you switch between the three stub screens via the state machine, and writes/reads a dummy JSON file.
+
+---
+
+**Sprint 2 (Weeks 3–4): End-to-End Mission Loop**
+
+* **Config phase**
+
+  * Build UI for Captain selection (ScrollView of cards)
+  * Ship selection dropdown/grid
+  * Route picker UI
+  * Hook UI → data models so chosen values populate a MissionData object
+* **Setup & mission stub**
+
+  * Transition to MissionScreen and display summary of MissionData
+  * Kick off a placeholder “mission” loop (e.g., progress bar filling over 10 s)
+* **State transitions**
+
+  * Wire Confirm buttons to advance MissionStateMachine through Config → Setup → Play → End
+* **Persist real data**
+
+  * Serialize actual MissionData to SaveManager on End
+  * Load MissionData back into ConfigScreen to demonstrate Load functionality
+* **Quick QA & bugfixes**
+
+**Deliverable:** Playable flow where you pick captain/ship/route, run a dummy mission, save the mission data, and on Reload see your previous choices.
+
+---
+
+**Sprint 3 (Weeks 5–6): UI Polish & Save/Load Refinement**
+
+* **UI polish**
+
+  * Replace placeholders with final UI layouts, art, fonts, and button styling
+  * Add feedback (e.g. loading spinners, confirmation popups)
+* **Robust save/load**
+
+  * Handle edge cases (corrupt files, first-run no save)
+  * Support multiple save slots if desired
+* **Basic audio & VFX**
+
+  * Wire in SFX for button clicks and mission complete
+  * Simple transitions (fade in/out) between screens
+* **Testing & documentation**
+
+  * Write up run-through guide for QA
+  * Fix show-stopper bugs
+* **MVP build**
+
+  * Create a standalone build with menu, player can start mission, save, quit, reload, and play again
+
+**Deliverable:** A polished v0.1 build you can demo: full single-mission loop, working UI, and reliable save/load.
