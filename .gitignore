@@ -1,0 +1,16 @@
+# Unity cache folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Uu]serSettings/
+.vscode/
+
+# Visual Studio, Rider, OS files
+*.csproj
+*.sln
+*.user
+*.vs/
+Thumbs.db
+.DS_Store
